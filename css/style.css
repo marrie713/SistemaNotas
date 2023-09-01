@@ -13,40 +13,72 @@ html,body{
     width: 100%;
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-    height: 100%;  
-    background-color: brown;
-
+section{
+    display: grid;
+    place-items: center;
+    height: 80vh;
 }
 
-h1{
-    font-size: 4rem;
+header{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 15%;
+    background-color: #D91801;
 }
 
 nav img{
-    width: 20rem;
-    height: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 14rem;
+    height: 14rem;
+    
 }
 
-.divlateral{
+label{
+    color: #fff;
+    font-size: 4rem;
+    padding: 4rem;
     display: flex;
-    flex-direction: row;
-    background-color: brown;
-    height: 20%;
+    align-items: center ;
+    
+}
+
+label :hover{
+    color: #6D696A;
+}
+
+h2{
+    color: #fff;
+    display: flex;
+    align-items:center;
+    font-size: 2.5rem;
+}
+
+
+/*Carrosel*/
+
+#items_Wrapper{
+    width: 100vw;
+
+}
+
+#items{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.item{
+    flex:none;
     width: 100%;
+    height: 400px;
+    scroll-snap-align: start;
+    
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
 }
+
+
